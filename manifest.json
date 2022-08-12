@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Ping One Auto Clicker",
+    "description": "Auto clicker for Ping One",
+    "version": "1.0",
+    "icon": "icon.png",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://authentictor.pingone.com/pingid/ppm/devices"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://authentictor.pingone.com/pingid/ppm/devices"],
+            "run_at": "document_end",
+            "js": ["content_script.js"]
+        }
+    ],
+    "action": {
+        "default_title": "Ping One Auto Clicker",
+        "default_popup": "popup.html"
+    }
+}
