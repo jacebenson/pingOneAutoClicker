@@ -14,6 +14,12 @@ let updateTime = ()=>{
 // update the 'seconds' span with the value in chrome storage when the popup is loaded
 chrome.storage.sync.get(['time'], function(data) {
     let time = parseInt(data.time,10);
+    if(isNaN(time)){
+        time = 3;
+        chrome.storage.sync.set({time}, ()=>{
+            console.log('time is set to ' + time);
+        });
+    }
     document.querySelector('#seconds').innerText = `${time} seconds`;
     document.querySelector('#select-time').value = `${time}`
 });

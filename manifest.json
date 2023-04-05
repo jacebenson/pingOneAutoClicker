@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Click Ping One button",
-    "description": "Clicks the ping button on load.",
+    "name": "Ping One Clicker",
+    "description": "Clicks the ping button on load after a few moments.",
     "version": "1.0",
     "permissions": ["activeTab", "scripting", "tabs", "storage"],
     "host_permissions": [
@@ -9,13 +9,20 @@
     ],
     "action": {
         "default_title": "Ping Clicker",
-        "default_popup": "popup.html"
+        "default_popup": "popup.html",
+        "default_icon": {
+          "16": "/images/icon.png",
+          "32": "/images/icon.png",
+          "48": "/images/icon.png",
+          "128": "/images/icon.png"
+      }
+        
     },
     "icons": {
-      "16": "016-icon.png",
-      "32": "032-icon.png",
-      "48": "048-icon.png",
-      "128": "128-icon.png"
+      "16": "/images/icon.png",
+      "32": "/images/icon.png",
+      "48": "/images/icon.png",
+      "128": "/images/icon.png"
     },
     "content_scripts": [
         {
