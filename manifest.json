@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "Ping One Clicker",
     "description": "Clicks the ping button on load after a few moments.",
-    "version": "1.0",
+    "version": "1.1",
     "permissions": ["activeTab", "scripting", "tabs", "storage"],
     "host_permissions": [
         "https://authenticator.pingone.com/pingid/ppm/devices"
