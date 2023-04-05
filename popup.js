@@ -13,8 +13,9 @@ let updateTime = ()=>{
 }
 // update the 'seconds' span with the value in chrome storage when the popup is loaded
 chrome.storage.sync.get(['time'], function(data) {
-    let time = parseInt(data.time,10) || 5;// default time is 5 seconds
+    let time = parseInt(data.time,10);
     document.querySelector('#seconds').innerText = `${time} seconds`;
+    document.querySelector('#select-time').value = `${time}`
 });
 // add event listener to 'button-update'
 document.querySelector('#button-update').addEventListener('click', updateTime);
