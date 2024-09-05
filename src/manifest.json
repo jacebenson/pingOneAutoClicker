@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Ping One Clicker",
   "description": "Clicks the ping button on load after a few moments.",
-  "version": "1.3",
+  "version": "1.4",
   "permissions": [
     "storage"
   ],
