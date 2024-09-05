@@ -24,6 +24,11 @@ If you're not able to install it on the Chrome Web Store, you can use the follow
 4. Select the folder containing the extension.
 5. Click "Load".
 
+### Packing the extension
+
+Let's understand whats needed.  A zip file.
+To that we will zip the content of /src into the /dist/${version} from package.json
+
 ## Privacy
 
 This extension does not collect any personal information and only uses your google cloud sync storage to store the time to click the button.
